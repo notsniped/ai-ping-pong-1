@@ -21,10 +21,6 @@
 .modal-dialog {
     width: 90%;
 }
-.instruction-image {
-    display: inline-block;
-    width: 45%;
-}
 #restart {
     width: 250px;
     font-size: 20px;
