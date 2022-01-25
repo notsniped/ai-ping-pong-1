@@ -17,6 +17,7 @@ var ball = {
 
 function setup(){
   canvas = createCanvas(700,600);
+  canvas.parent('canvas');
   canvas.center();
 }
 
