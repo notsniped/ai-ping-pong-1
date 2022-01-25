@@ -1,29 +1,35 @@
-.heading{
-    font-size:23px;
-    width:100%;
-    margin:0px;
-    color:white;
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    color: white;
     font-weight: bold;  
 }
-#instruction{
-    width:250px;
-    font-size:20px;
+#instruction {
+    width: 250px;
+    font-size: 20px;
     border-radius: 20px;
 }
-#play{
-    width:250px;
-    font-size:20px;
+#play {
+    width: 250px;
+    font-size: 20px;
     border-radius: 20px;
-    background-color:purple;
-    color:white;
-    height:40px;
+    background-color: purple;
+    color: white;
+    height: 40px;
 }
-#status{
-    width:250px;
-    height:35px;
-    font-size:20px;
-    color:white;
-    border-radius:20px;
+#restart {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+    height: 40px;
+}
+#status {
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
 }
 canvas {
     border-radius: 5px;
