@@ -27,7 +27,7 @@ function setup(){
   video.size(550, 500);
   video.hide();
   poseNet = ml5.poseNet(video, modelLoaded);
-  poseNet.on('nose', gotPoses);
+  poseNet.on('pose', gotPoses);
 }
 function modelLoaded() {
   console.log('PoseNet successfully initialized.');
