@@ -6,6 +6,7 @@ var paddle1Y;
 var  playerscore =0;
 var audio1;
 var pcscore =0;
+video = ''
 //ball x and y and speedx speed y and radius
 var ball = {
     x:350/2,
@@ -28,7 +29,8 @@ function setup(){
 function modelLoaded() {
   console.log('PoseNet successfully initialized.') 
 }
-function draw(){
+function draw() {
+    image(video, 0, 0, 550, 500)
     background(0); 
 
     fill("black");
