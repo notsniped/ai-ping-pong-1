@@ -33,8 +33,8 @@ function modelLoaded() {
   console.log('PoseNet successfully initialized.');
 }
 function gotPoses(results) {
+    console.log(results);
     if (results.length > 0) {
-        console.log(results);
         rightWrist_X = results[0].pose.rightWrist.x;
         console.log('rightWrist_X: ' + rightWrist_X);
         rightWrist_Y = results[0].pose.rightWrist.y;
