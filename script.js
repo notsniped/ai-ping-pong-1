@@ -19,8 +19,15 @@ function setup(){
   canvas = createCanvas(700,600);
   canvas.parent('canvas');
   canvas.center();
+  video = createCapture(VIDEO);
+  video.size(550, 500);
+  video.hide();
+  poseNet = ml5.poseNet(video, modelLoaded);
+  poseNet.on('nose', gotPoses);
 }
-
+function modelLoaded() {
+  console.log('PoseNet successfully initialized.') 
+}
 function draw(){
     background(0); 
 
