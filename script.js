@@ -6,6 +6,9 @@ var paddle1Y;
 var  playerscore =0;
 var audio1;
 var pcscore =0;
+rightWrist_X = '';
+rightWrist_Y = '';
+rightWrist_Score = '';
 video = '';
 //ball x and y and speedx speed y and radius
 var ball = {
@@ -36,16 +39,21 @@ function gotPoses(results) {
         console.log('rightWrist_X: ' + rightWrist_X);
         rightWrist_Y = results[0].pose.rightWrist.y;
         console.log('rightWrist_Y: ' + rightWrist_Y);
+        rightWrist_Score = results[0].pose.keypoints[10].score;
+        console.log('Right Wrist Score: ' + rightWrist_Score);
     }
 }
 function draw() {
     image(video, 0, 0, 550, 500);
     background(0); 
-
+    fill('#FF0000');
+    stroke('#FF0000');
     fill("black");
     stroke("black");
     rect(680,0,20,700);
-
+    if (rightWrist_Score > 0.2) {
+        circle(rightWrist_X, rightWrist_Y, 20)
+    }
     fill("black");
     stroke("black");
     rect(0,0,20,700);
